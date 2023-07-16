@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const voitureCtrl = require('../controllers/voitureController')
 
-router.get('/allcars', voitureCtrl.selectAllCar);
+router.get('/allcars', voitureCtrl.selectAllCars);
 router.get('/:id/car', voitureCtrl.selectCar);
 router.post('/create', voitureCtrl.createCar);
 router.put('/:id/update', voitureCtrl.updateCar);

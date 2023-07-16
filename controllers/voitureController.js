@@ -1,6 +1,6 @@
 const Voiture = require('../models/voitureModel');
 
-exports.selectAllCar = async (req, res) => {
+exports.selectAllCars = async (req, res) => {
     try {
         await Voiture.find()
             .then(data => res.status(200).json(data))
