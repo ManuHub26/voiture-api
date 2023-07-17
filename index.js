@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const voitureRoute = require('./routes/voitureRoute');
 require("dotenv").config();
 
-const port = process.env.PORT;
+const port = process.env.PORT || 4600;
 const app = express();
 
 
